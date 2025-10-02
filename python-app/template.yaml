@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: python-template-01
-  title: Python flask template
+  title: Python flask template 01
   description: Provisions a minimalistic flask application
 spec:
   owner: development
@@ -34,7 +34,7 @@ spec:
       input:
         url: ./template
         values:
-          app_name: ${{parameters.component_id | toflatCase}}
+          app_name: ${{parameters.component_id | toFlatCase}}
           app_env: ${{parameters.environment}}
 
     - id: publish
