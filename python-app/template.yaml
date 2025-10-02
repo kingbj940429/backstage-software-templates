@@ -34,7 +34,7 @@ spec:
       input:
         url: ./template
         values:
-          app_name: ${{parameters.component_id | toCamelCase}}
+          app_name: ${{parameters.component_id | toflatCase}}
           app_env: ${{parameters.environment}}
 
     - id: publish
