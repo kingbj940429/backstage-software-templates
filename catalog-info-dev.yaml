@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: local-cluster-backstage-toy-app
+  description: Local Cluster Backstage Toy App
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: local-cluster-backstage-toy-app
+    backstage.io/kubernetes-cluster: local-cluster
+    argocd/app-name: local-cluster-backstage-toy-app
+    github.com/project-slug: lunit-io/chart-hub/tig/backstage-toy-app/1.0.0
+spec:
+  type: service
+  owner: tig
+  lifecycle: dev
+  system: backstage-toy-app
